@@ -78,36 +78,36 @@ section#card-contact {
   align-items: center;
   gap: 1rem;
 }
+#card-contact main li ion-icon {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
 
-#card-contact main li span.mail1 {
+#card-contact main li ion-icon.mail1 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--card-color-light);
-  width: 35px;
-  height: 35px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   transition: 0.5s;
   cursor: pointer;
 }
-#card-contact main li span.mail1:hover {
+#card-contact main li ion-icon.mail1:hover {
   box-shadow: 0 0 9px var(--secondary-color);
   transition: 0.5s;
 }
-#card-contact main li span.mail2 {
+#card-contact main li ion-icon.mail2 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--card-color-light);
-  width: 35px;
-  height: 35px;
   border-radius: 50%;
   background-color: var(--primary-color);
   transition: 0.5s;
   cursor: pointer;
 }
-#card-contact main li span.mail2:hover {
+#card-contact main li ion-icon.mail2:hover {
   box-shadow: 0 0 9px var(--primary-color);
   transition: 0.5s;
 }
@@ -139,19 +139,28 @@ section#card-contact {
   width: 100%;
   margin-top: 2rem;
 }
-#card-contact footer div {
+#card-contact footer ion-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 35px;
-  height: 35px;
+  padding: 0.6rem;
+  color: var(--subtitle-color);
   border-radius: 50%;
   transition: 0.5s;
 }
-#card-contact footer div:hover {
+#card-contact footer ion-icon:hover {
   background-color: var(--card-color-medium);
   transition: 0.5s;
+}
+#card-contact footer ion-icon:nth-child(1):hover {
+  color: #3b5998;
+}
+#card-contact footer ion-icon:nth-child(2):hover {
+  color: #00acee;
+}
+#card-contact footer ion-icon:nth-child(3):hover {
+  color: #ff1981;
 }
 #card-contact footer svg path {
   fill: var(--card-color-dark);
