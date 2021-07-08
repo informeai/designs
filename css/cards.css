@@ -244,3 +244,113 @@ section#congrats {
   box-shadow: 0 3px 9px rgba(212, 12, 96, 0.8);
   transition: 0.5s;
 }
+/*CALENDAR*/
+section#calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--card-color-light);
+}
+section#calendar header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+section#calendar header ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+section#calendar header ul li:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section#calendar header ul li:not(:nth-child(1)) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+section#calendar header ul li:nth-child(1):hover {
+  transition: 0.3s;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 5px rgba(212, 12, 96, 0.7);
+}
+section#calendar header ul li span.day {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--card-color-light);
+  font-weight: 500;
+}
+section#calendar header ul li span.month {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--card-color-medium);
+}
+section#calendar header ul li span.time {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--title-color-light);
+  background-color: var(--card-color-medium);
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section#calendar header ul li span.time:hover {
+  color: var(--card-color-light);
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+section#calendar header ul li span.desc {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: var(--subtitle-color);
+}
+section#calendar footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 30px;
+  transition: 0.3s;
+}
+section#calendar footer a:hover {
+  transition: 0.3s;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(212, 12, 96, 0.8);
+}
+section#calendar footer a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  width: 100%;
+  height: 30px;
+  color: var(--card-color-light);
+  font-size: 0.7rem;
+  font-weight: 300;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
