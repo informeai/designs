@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #ac3ef5;
+  --secondary-color: #ff0070;
+  --green-color: #05c95a;
+  --card-color-dark: #191827;
+  --card-color-light: #fff;
+  --card-color-medium: #f3f3f3;
+  --title-color-dark: #f9f9f9;
+  --title-color-light: #111;
+  --subtitle-color: #666;
+  --body-color: #e2e2e2;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-color);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+/*CARD CONTACT*/
+section#card-contact {
+  width: 300px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--card-color-light);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+#card-contact header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#card-contact header h1 {
+  color: var(--title-color-light);
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+#card-contact header h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--subtitle-color);
+  font-size: 0.9rem;
+  word-spacing: 0.1rem;
+  font-weight: 400;
+}
+#card-contact main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#card-contact main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#card-contact main li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#card-contact main li span.mail1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-color-light);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+#card-contact main li span.mail1:hover {
+  box-shadow: 0 0 9px var(--secondary-color);
+  transition: 0.5s;
+}
+#card-contact main li span.mail2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-color-light);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+#card-contact main li span.mail2:hover {
+  box-shadow: 0 0 9px var(--primary-color);
+  transition: 0.5s;
+}
+#card-contact main li .material-icons {
+  font-size: 18px;
+}
+#card-contact main li div {
+  display: flex;
+  gap: 0.1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#card-contact main li div .email {
+  color: var(--title-color);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+#card-contact main li div .owner {
+  color: var(--subtitle-color);
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+#card-contact footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+#card-contact footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#card-contact footer div:hover {
+  background-color: var(--card-color-medium);
+  transition: 0.5s;
+}
+#card-contact footer svg path {
+  fill: var(--card-color-dark);
+}
+#card-contact footer #twitter svg path {
+  stroke: var(--card-color-dark);
+  stroke-width: 0;
+  fill: var(--card-color-dark);
+}
+/*CARD CONGRATS*/
+section#congrats {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--card-color-light);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+#congrats header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#congrats header h1 {
+  color: var(--title-color-light);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+#congrats header ion-icon {
+  color: var(--subtitle-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: 0.3s;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#congrats header ion-icon:hover {
+  transition: 0.3s;
+  background-color: var(--card-color-medium);
+}
+#congrats header ion-icon:nth-child(1) {
+  color: var(--green-color);
+}
+#congrats main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#congrats main p {
+  line-height: 1.5rem;
+  color: var(--subtitle-color);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+#congrats footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+#congrats footer a {
+  text-decoration: none;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  color: var(--card-color-light);
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#congrats footer a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 9px rgba(212, 12, 96, 0.8);
+  transition: 0.5s;
+}
