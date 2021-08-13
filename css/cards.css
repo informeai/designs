@@ -365,10 +365,10 @@ section#bag{
 	cursor: pointer;
 	border-radius: 0.5rem;
 	transition: 0.5s;
-	background: rgba(255,0,112,1);
+	background: rgba(255,0,112,0.5);
 }
 section#bag:hover{
-	background: rgba(255,0,112,0.5);
+	background: rgba(255,0,112,1);
 	transition: 0.5s;
 }
 section#bag:after{
@@ -379,11 +379,12 @@ section#bag:after{
 	transition: 0.5s;
 	top: 0;
 	left: 25%;
-	background: rgba(172,62,245,0.5);
+	background: rgba(172,62,245,0);
 	border-radius: 50%;
 	z-index: -1;
 }
 section#bag:hover:after{
+	background: rgba(172,62,245,1);
 	transition: 0.5s;
-	top: -50px;
+	top: -25px;
 }
