@@ -388,3 +388,31 @@ section#bag:hover:after{
 	transition: 0.5s;
 	top: -25px;
 }
+
+/*ISOMORPH*/
+section#isomorph{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 400px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+section#isomorph span{
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.3);
+	transition: 0.5s;
+}
+section#isomorph:hover{
+	background: rgba(255,255,255,1);
+	transition: 0.5s;
+}
+section#isomorph:hover span{
+	transition: 0.5s;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: var(--secondary-color);
+}
