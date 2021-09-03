@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/list.css" />
+		<link
+		      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+		      rel="stylesheet"
+		    />
+		<title>List</title>
+	</head>
+	<body>
+		<h1> List </h1>
+		<div id="insert">
+			<input id="input-insert" placeholder="Insert here..."/>
+			<span id="add-insert">
+				<ion-icon name="add"></ion-icon>
+			</span>
+		</div>
+		<ul id="list">
+		</ul>
+		
+		<!--Ionicons-->
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+		<script>
+			let inputInsert = document.getElementById("input-insert")
+			let addInsert = document.getElementById("add-insert")
+			let list = document.getElementById("list")
+			//click addInsert
+			addInsert.addEventListener("click",(e)=>{
+				if (inputInsert.value !== ''){
+					//create random img
+					rnd = Math.floor(Math.random() * 1001);
+					url = `url(https://picsum.photos/id/${rnd}/40/40)`
+					//create div and span
+					let li = document.createElement("li")
+					li.classList.add("tile")
+					let div = document.createElement("div")
+					div.classList.add("avatar")
+					div.style.background = url
+					let span = document.createElement("span")
+					span.classList.add("title")
+					span.innerHTML = inputInsert.value
+					//insert div and span in li
+					li.appendChild(div)
+					li.appendChild(span)
+					//add event in li
+					li.addEventListener("click",(e)=>{
+						li.classList.add("delete")
+						setTimeout((e)=>{
+							li.parentNode.removeChild(li)
+						},200)
+						
+					})
+					//insert li in list
+					list.appendChild(li)
+					//clear input
+					inputInsert.value = ''
+				}
+			})
+			
+		</script>
+	</body>
+</html>
