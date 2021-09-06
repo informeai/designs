@@ -434,3 +434,27 @@ section#photo:hover{
 	box-shadow: 0px 12px 10px 0px rgba(0,0,0,0.1);
 	
 }
+
+/*EMOJIS*/
+section#emojis{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 400px;
+	border-radius: 20px;
+	background-color: var(--card-color-light);
+}
+.emoji{
+	position: relative;
+	margin: 1px;
+	cursor: pointer;
+	transition: 0.3s;
+	opacity: 0.8;
+}
+.emoji:hover{
+	transition: 0.3s;
+	opacity: 1;
+	font-size: 3rem;
+}
