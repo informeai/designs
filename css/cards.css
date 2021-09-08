@@ -442,7 +442,7 @@ section#emojis{
 	justify-content: center;
 	align-items: center;
 	width: 300px;
-	height: 400px;
+	height: 200px;
 	border-radius: 20px;
 	background-color: var(--card-color-light);
 }
@@ -457,4 +457,88 @@ section#emojis{
 	transition: 0.3s;
 	opacity: 1;
 	font-size: 3rem;
+}
+/*CARD ANIMATIONS*/
+section#card-animations{
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	justify-content: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	background-color: var(--card-color-light);
+}
+.check-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	transition: 0.3s;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	cursor: pointer;
+}
+.check-box ion-icon{
+	font-size: 0.5rem;
+	opacity: 0;
+	color: #ccc;
+	transform: translateY(10px);
+	transition: 0.5s;
+}
+.check-box:hover{
+	transition: 0.3s;
+	border: 2px solid #0070ff;
+	background-color: #0070ff;
+}
+
+.check-box:hover ion-icon{
+	font-size: 1.5rem;
+	font-weight: bold;
+	opacity: 1;
+	color: #fff;
+	transform: translateY(0px);
+	transition: 0.5s;
+}
+.radio{
+	width: 25px;
+	height: 25px;
+	transition: 0.3s;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.radio:hover{
+	transition: 0.3s;
+	border: 8px solid #0070ff;
+}
+.switch{
+	position: relative;
+	width: 40px;
+	height: 25px;
+	border-radius: 20px;
+	background-color: #ccc;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.switch:after{
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	top: 2px;
+	left: 2px;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.switch:hover{
+	transition: 0.3s;
+	background-color: #0070ff;
+}
+.switch:hover:after{
+	content: '';
+	position: absolute;
+	transform: translateX(15px);
 }
